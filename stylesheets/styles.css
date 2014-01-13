@@ -228,7 +228,7 @@ header {
 	border-top-right-radius: 4px;
 	border-bottom-right-radius: 4px;
 	padding: 34px 25px 22px 50px;
-	margin: 30px 25px 0 0;
+	margin: 30px 25px 0 15px;
 	/*-webkit-font-smoothing: antialiased;*/
 }
 
@@ -310,6 +310,11 @@ a.buttons {
 
 a.github {
 	background: url(../images/octocat-small.png) no-repeat 1px;
+  color: #F7F7EB;
+}
+
+a.linkedin {
+  background: url(../images/linkedin.png) no-repeat 1px;
   color: #F7F7EB;
 }
 
@@ -422,5 +427,130 @@ footer {
     padding:0.4in;
     font-size:12pt;
     color:#444;
+  }
+}
+
+/*@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+  font-family: 'codropsicons';
+  src:url('../fonts/codropsicons/codropsicons.eot');
+  src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+    url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+    url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+/**, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }*/
+/*body, html { font-size: 100%; padding: 0; margin: 0;}*/
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+/*CODROP code*/
+.grid {
+  padding: 20px 20px 100px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+
+.grid li {
+  display: inline-block;
+  width: 440px;
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.grid figure {
+  margin: 0;
+  position: relative;
+}
+
+.grid figure img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+}
+
+.grid figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background: #F7F7EB;
+  color: #FF5951;
+}
+
+.grid figcaption h3 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.grid figcaption a {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  background: #ed4e6e;
+  color: #fff;
+}
+
+/* Individual Caption Styles */
+
+/* Caption Style 1 */
+.cs-style-1 figcaption {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.no-touch .cs-style-1 figure:hover figcaption,
+.cs-style-1 figure.cs-hover figcaption {
+  opacity: 1;
+  -webkit-transform: translate(15px, 15px);
+  -moz-transform: translate(15px, 15px);
+  -ms-transform: translate(15px, 15px);
+  transform: translate(15px, 15px);
+}
+
+.cs-style-1 figcaption h2 {
+  margin-top: 70px;
+  color: #FF5951;
+}
+
+.cs-style-1 figcaption span {
+  display: block;
+  color: #4F5E67;
+}
+
+.cs-style-1 figcaption a {
+  margin-top: 30px;
+  color: ##F7F7EB;
+  background-color: #FF5951;
+}
+
+
+@media screen and (max-width: 31.5em) {
+  .grid {
+    padding: 10px 10px 100px 10px;
+  }
+  .grid li {
+    width: 100%;
+    min-width: 300px;
   }
 }
